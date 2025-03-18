@@ -65,8 +65,25 @@ To run this project, ensure you have Python 3.7+ installed and install the requi
 pip install -r requirements.txt
 
 
+```
+
+1. Data Preparation
+Loading: The dataset is assumed to be loaded as a DataFrame with 11,520 rows and 114 columns (112 features, 'Class', 'user').
+Normalization: Features are standardized using StandardScaler.
+Label Encoding: Classes are encoded from floats (0.0, 1.0, 2.0) to integers (0, 1, 2).
+Splitting: Data is split into training (70%), validation (15%), and test (15%) sets.
+
+3. Model Training and Evaluation
+Training: Models are trained with the Adam optimizer (learning rate 0.001), cross-entropy loss, and early stopping based on validation loss.
+Evaluation: Metrics include loss, accuracy, precision, recall, F1-score, and AUC-ROC.
+Visualization: Plots for loss/accuracy curves, confusion matrices, and ROC curves are generated.
 
 
+Results
+Model performance is evaluated and visualized with:
+
+Metrics: Train/validation/test loss and accuracy, AUC-ROC, precision, recall, and F1-score (macro average).
+Visualizations: Loss and accuracy curves, confusion matrices, and ROC curves.
 
 final results from all models :
 
